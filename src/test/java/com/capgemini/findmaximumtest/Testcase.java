@@ -16,21 +16,21 @@ public class Testcase {
 	@Test
 	public void testCaseOne() {
 		FindMax findMax = new FindMax();
-		Integer data = findMax.find(5, 4, 1);
-		Assert.assertEquals((Integer) 5, data);
+		Float data = findMax.find(5.6f, 4.9f, 1.0f);
+		Assert.assertEquals((Float) 5.6f, data);
 	}
 
 	@Test
 	public void testCaseTwo() {
 		FindMax findMax = new FindMax();
-		Integer data = findMax.find(3, 4, 1);
-		Assert.assertEquals((Integer) 4, data);
+		Float data = findMax.find(3.1f, 4.2f, 1.3f);
+		Assert.assertEquals((Float) 4.2f, data);
 	}
 
 	@Test
 	public void testCaseThree() {
 		FindMax findMax = new FindMax();
-		Integer data = findMax.find(5, 4, 9);
-		Assert.assertEquals((Integer) 9, data);
+		Float data = findMax.find(5.4f, 4.2f, 9.3f);
+		Assert.assertEquals((Float) 9.3f, data);
 	}
 }

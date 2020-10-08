@@ -1,8 +1,8 @@
 package com.capgemini.findmaximum;
 
 public class FindMax {
-	public static Integer find(Integer numberOne, Integer numberTwo, Integer numberThree) {
-		Integer max = numberOne;
+	public static Float find(Float numberOne, Float numberTwo, Float numberThree) {
+		Float max = numberOne;
 		if (numberTwo.compareTo(max) > 0)
 			max = numberTwo;
 		if (numberThree.compareTo(max) > 0)
