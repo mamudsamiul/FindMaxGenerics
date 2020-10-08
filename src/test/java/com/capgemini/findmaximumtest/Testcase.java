@@ -15,16 +15,16 @@ import static org.junit.Assert.*;
 public class Testcase {
 	@Test
 	public void testCaseOneInt() {
-		FindMax findMax = new FindMax(5, 4, 1);
+		FindMax findMax = new FindMax(5, 4, 1, 0, 1, 2);
 		Integer data = (Integer) findMax.maximum();
 		Assert.assertEquals((Integer) 5, data);
 	}
 
 	@Test
 	public void testCaseTwoInt() {
-		FindMax findMax = new FindMax(3, 4, 1);
+		FindMax findMax = new FindMax(3, 4, 1, 10);
 		Integer data = (Integer) findMax.maximum();
-		Assert.assertEquals((Integer) 4, data);
+		Assert.assertEquals((Integer) 10, data);
 	}
 
 	@Test
@@ -57,9 +57,9 @@ public class Testcase {
 
 	@Test
 	public void testCaseOne() {
-		FindMax findMax = new FindMax("c", "b", "a");
+		FindMax findMax = new FindMax("d", "c", "b", "a");
 		String data = (String) findMax.maximum();
-		Assert.assertEquals("c", data);
+		Assert.assertEquals("d", data);
 	}
 
 	@Test
