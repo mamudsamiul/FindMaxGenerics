@@ -7,17 +7,17 @@ import java.util.Scanner;
 
 public class Executer {
 	public static void main(String[] args) {
-		Float numberOne;
-		Float numberTwo;
-		Float numberThree;
+		String numberOne;
+		String numberTwo;
+		String numberThree;
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Welcome to Maximum finder System");
 		System.out.println("Enter the First Number: ");
-		numberOne = scan.nextFloat();
+		numberOne = scan.next();
 		System.out.println("Enter the Second Number: ");
-		numberTwo = scan.nextFloat();
+		numberTwo = scan.next();
 		System.out.println("Enter the Third Number: ");
-		numberThree = scan.nextFloat();
+		numberThree = scan.next();
 		System.out.println("Maximum number is : " + FindMax.find(numberOne, numberTwo, numberThree));
 	}
 }
