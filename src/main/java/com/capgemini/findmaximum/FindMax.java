@@ -1,26 +1,21 @@
 package com.capgemini.findmaximum;
 
-public class FindMax<E extends Comparable<E>> {
-	E numberOne;
-	E numberTwo;
-	E numberThree;
+import java.util.ArrayList;
+import java.util.Collections;
 
-	public FindMax(E numberOne, E numberTwo, E numberThree) {
-		this.numberOne = numberOne;
-		this.numberTwo = numberTwo;
-		this.numberThree = numberThree;
+public class FindMax<E extends Comparable<E>> {
+	ArrayList<E> list = new ArrayList<E>();
+
+	public FindMax(E... values) {
+		for (E value : values)
+			this.list.add(value);
 	}
 
 	public E maximum() {
-		return find(numberOne, numberTwo, numberThree);
+		return find(list);
 	}
 
-	public static <E extends Comparable<E>> E find(E numberOne, E numberTwo, E numberThree) {
-		E max = numberOne;
-		if (numberTwo.compareTo(max) > 0)
-			max = numberTwo;
-		if (numberThree.compareTo(max) > 0)
-			max = numberThree;
-		return max;
+	public static <E extends Comparable<E>> E find(ArrayList<E> list) {
+		return Collections.max(list);
 	}
 }

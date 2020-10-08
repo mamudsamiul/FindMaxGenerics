@@ -18,6 +18,5 @@ public class Executer {
 		numberTwo = scan.next();
 		System.out.println("Enter the Third Number: ");
 		numberThree = scan.next();
-		System.out.println("Maximum number is : " + FindMax.find(numberOne, numberTwo, numberThree));
 	}
 }
