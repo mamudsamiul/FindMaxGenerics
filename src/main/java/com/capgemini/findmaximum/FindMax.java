@@ -12,10 +12,16 @@ public class FindMax<E extends Comparable<E>> {
 	}
 
 	public E maximum() {
-		return find(list);
+		E max = find(list);
+		toPrint(max);
+		return max;
 	}
 
 	public static <E extends Comparable<E>> E find(ArrayList<E> list) {
 		return Collections.max(list);
+	}
+
+	private void toPrint(E max) {
+		System.out.println("Maximum element is : " + max);
 	}
 }
